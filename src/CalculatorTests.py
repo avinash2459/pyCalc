@@ -21,6 +21,11 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.add(row['avalue1'], row['avalue2']), int(row['aresult']))
             self.assertEqual(self.calculator.result, int(row['aresult']))
 
+    def test_subtract_method_calculator(self):
+        for row in test_data:
+            self.assertEqual(self.calculator.subtract(row['svalue1'], row['svalue2']), int(row['subresult']))
+            self.assertEqual(self.calculator.result, int(row['subresult']))
+
 
 if __name__ == '__main__':
     unittest.main()

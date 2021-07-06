@@ -14,8 +14,12 @@ def division(a, b):
     return round((int(b) / int(a)), 9)
 
 
-def square(a):
+def square2(a):
     return int(a) ** 2
+
+
+def squareroot2(a):
+    return round((int(a) ** 0.5), 8)
 
 
 class Calculator:
@@ -41,5 +45,9 @@ class Calculator:
         return self.result
 
     def square(self, a):
-        self.result = square(a)
+        self.result = square2(a)
+        return self.result
+
+    def squareroot(self, a):
+        self.result = squareroot2(a)
         return self.result

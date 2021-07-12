@@ -1,25 +1,9 @@
-def addition(a, b):
-    return int(a) + int(b)
-
-
-def subtraction(a, b):
-    return int(b) - int(a)
-
-
-def multiplication(a, b):
-    return int(a) * int(b)
-
-
-def division(a, b):
-    return round((int(b) / int(a)), 9)
-
-
-def square2(a):
-    return int(a) ** 2
-
-
-def squareroot2(a):
-    return round((int(a) ** 0.5), 8)
+from Calculator.Addition import addition
+from Calculator.Subtraction import subtraction
+from Calculator.Multiplication import multiplication
+from Calculator.Division import division
+from Calculator.Square import squaring
+from Calculator.SquareRoot import squarerooting
 
 
 class Calculator:
@@ -45,9 +29,9 @@ class Calculator:
         return self.result
 
     def square(self, a):
-        self.result = square2(a)
+        self.result = squaring(a)
         return self.result
 
-    def squareroot(self, a):
-        self.result = squareroot2(a)
+    def square_root(self, a):
+        self.result = squarerooting(a)
         return self.result

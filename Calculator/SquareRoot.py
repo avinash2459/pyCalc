@@ -1,2 +1,2 @@
 def squarerooting(a):
-    return round((int(a) ** 0.5), 8)
+    return round((float(a) ** 0.5), 8)

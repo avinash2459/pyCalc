@@ -1,5 +1,5 @@
-value1,mean
-110,99.327
+value1,mean,median,mode,variance,sd
+110,99.327,99,101,391.636,19.8
 122
 102
 113

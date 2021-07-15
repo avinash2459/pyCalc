@@ -16,15 +16,15 @@ class RandomNumberTests(unittest.TestCase):
 
     def test_random_with_seed(self):
         result = self.randomgenerator.random_with_seed(1, 300, 4)
-        print(result)
+        print('Random Number with Seed :', result)
 
     def test_random_without_seed(self):
         result = self.randomgenerator.random_without_seed(1, 300)
-        print(result)
+        print('Random Number Without Seed :', result)
 
     def test_randomlist_with_seed(self):
         result = self.randomgenerator.randomlist_with_seed(1, 300, 4, 10)
-        print(result)
+        print('Random Number List with Seed:', result)
 
 
 if __name__ == '__main__':

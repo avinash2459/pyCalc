@@ -32,7 +32,7 @@ class CalculatorTests(unittest.TestCase):
 
     def test_divide_method_calculator(self):
         for row in self.test_data:
-            self.assertEqual(self.calculator.divide(row['dvalue1'], row['dvalue2']), float(row['divideresult']))
+            self.assertEqual(self.calculator.divide(row['dvalue2'], row['dvalue1']), float(row['divideresult']))
             self.assertEqual(self.calculator.result, float(row['divideresult']))
 
     def test_square_method_calculator(self):

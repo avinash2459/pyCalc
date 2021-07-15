@@ -15,14 +15,13 @@ class StatisticsTests(unittest.TestCase):
     variance = float(sample_data[0]["variance"])
     sd = float(sample_data[0]["sd"])
 
-
     def setUp(self) -> None:
         self.statistics = Statistics()
 
-    def test_instantiate_calculator(self):
+    def test_instantiate_statistics(self):
         self.assertIsInstance(self.statistics, Statistics)
 
-    def test_decorator_calculator(self):
+    def test_decorator_statistics(self):
         self.assertIsInstance(self.statistics, Statistics)
 
     def test_mean_statistics(self):
